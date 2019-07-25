@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.container {
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.top {
+    flex-basis: 200px;
+    flex-grow: 0;
+    flex-shrink: 0;
+
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+#profile {
+    width: 140px;
+    height: 140px;
+
+    object-fit: cover;
+
+    border-radius: 40%;
+}
+
+.profile {
+    width: 100px;
+    height: 100px;
+
+    object-fit: cover;
+
+    border-radius: 40%;
+
+    float: left;
+
+    margin-left: 20px;
+}
+
+#name {
+    display: inline;
+    vertical-align: top;
+    font-size: 2.5em;
+
+    margin-left: 30px;
+}
+
+.message {
+    flex-grow: 1;
+    flex-shrink: 1;
+
+    background-color: #C0D1DA;
+
+    overflow: auto;
+
+    padding-top: 20px;
+}
+
+.interface {
+    flex-basis: 240px;
+    flex-grow: 0;
+    flex-shrink: 0;
+
+    display: flex;
+    flex-direction: row;
+
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#input {
+    flex-grow: 1;
+    flex-shrink: 1;
+
+    border: 0;
+    font-size: 1em;
+
+    display: inline-block;
+}
+
+#input:focus {
+    outline: none;
+}
+
+#send {
+    flex-grow: 0;
+    flex-shrink: 0;
+
+    height: 200px;
+    width: 200px;
+    float: right;
+
+    border-radius: 5px;
+    background-color: #FAE64E;
+
+    font-size: 2em;
+}
+
+#send:active{
+    background-color: #E1D045;
+}
+
+#send:focus{
+    outline: none;
+}
+
+#send:disabled{
+    background-color: lightgrey;
+}
+
+.message > div {
+    margin: 20px;
+}
+
+.message > div > .msg {
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 20px;
+
+    font-size: 2.2em;
+
+    border-radius: 8px;
+}
+
+.message > div > .time {
+    font-size: 1.5em;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.message > .my {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+}
+
+.message > .my > .msg {
+    background-color: #FAE64E;
+    max-width: 80%;
+}
+
+.message > .other {
+    display: flex;
+    align-items: flex-end;
+
+    margin-left: 140px;
+}
+
+.message > .other > .msg {
+    background-color: white;
+    max-width: 80%;
+}
+
+.sender {
+    font-size: 2em;
+    color: #333;
+}
