@@ -11,43 +11,22 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   </head>
   <body>
-    <div class="container">
-      <div class="top">
-        <img
-          id="profile"
-          src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3289&q=80"
-        />
-        <h1 id="name">Name</h1>
+    <div class="background">
+      <div class="header">
+        <h1 id="title">카카오톡 클론코딩</h1>
+        <img src="https://img.icons8.com/color/96/000000/chat.png" />
       </div>
-      <div class="message"></div>
-      <div class="interface">
-        <textarea id="input"></textarea>
-        <button id="send" disabled>Send</button>
+
+      <div class="inputs">
+        <input id="input-me" type="text" placeholder="나" />
+        <input id="input-other" type="text" placeholder="상대방" />
+        <button id="input-start">시작하기</button>
       </div>
     </div>
 
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/6.3.1/firebase-app.js"></script>
-
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-        https://firebase.google.com/docs/web/setup#config-web-app -->
-    <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-database.js"></script>
-
-    <script>
-      // Your web app's Firebase configuration
-      var firebaseConfig = {
-        apiKey: "AIzaSyBxK07OXLFaN5w9516kfAsEKquKPvHRxWw",
-        authDomain: "clonecoding-messenger.firebaseapp.com",
-        databaseURL: "https://clonecoding-messenger.firebaseio.com",
-        projectId: "clonecoding-messenger",
-        storageBucket: "",
-        messagingSenderId: "391687139062",
-        appId: "1:391687139062:web:62c0c496b273c533"
-      };
-      // Initialize Firebase
-      firebase.initializeApp(firebaseConfig);
-    </script>
+    <a id="ref" href="https://icons8.com/icon/13724/chat"
+      >Chat icon by Icons8</a
+    >
 
     <script type="text/javascript" src="script.js" charset="utf-8"></script>
   </body>
