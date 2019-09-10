@@ -132,6 +132,8 @@ function getParameter(key) {
 // send message
 function sendMessage(me, other) {
   var msg = $("#input").val();
+  if (msg.trim() === "") return;
+
   firebase
     .database()
     .ref("messages")
